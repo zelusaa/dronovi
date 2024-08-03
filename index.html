@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form class="town--form">
+        <h3>Add town top-right coordinate</h3>
+        <label for="top-x">Town top-x coordinate</label>
+        <input type="number" id="top-x" name="top-x" required><br><br>
+        <label for="top-y">Town top-y coordinate</label>
+        <input type="number" id="top-y" name="top-y" required><br><br>
+
+        <input type="submit" value="Add TOWN cordinate">
+    </form>
+    <form class="sklad--form">
+        <h3>Add warehouses</h3>
+        <label for="imeto_sklad">Warehouse name:</label>
+        <input type="text" id="imeto_sklad" name="imeto_sklad" required><br><br>
+
+        <label for="x_sklad">X coordinate:</label>
+        <input type="number" id="x_sklad" name="x_sklad" required><br><br>
+
+        <label for="y_sklad">Y coordinate:</label>
+        <input type="number" id="y_sklad" name="y_sklad" required><br><br>
+        <select id="dron" name="dron">
+            <option value="dron1">Dron 1 - Capacity: 0.5 kW, Consumption: 1 W</option>
+            <option value="dron2">Dron 2 - Capacity: 1 kW, Consumption: 3 W</option>
+            <option value="dron3">Dron 3 - Capacity: 2 kW, Consumption: 5 W</option>
+        </select><br><br>
+        <input type="submit" value="Add warehouse">
+    </form>
+    <form class="product--form">
+        <h3>Add some products</h3>
+        <label for="ime_proizvoda">Product name:</label>
+        <input type="text" id="ime_proizvoda" name="ime_proizvoda" required><br><br>
+
+        <input type="submit" value="Add product">
+    </form>
+    <form class="customer--form">
+        <h3>Add some customers</h3>
+        <label for="ime">Name:</label>
+        <input type="text" id="ime" name="ime" required><br><br>
+
+        <label for="x_koordinata">X koordinata:</label>
+        <input type="number" id="x_koordinata" name="x_koordinata" required><br><br>
+
+        <label for="y_koordinata">Y koordinata:</label>
+        <input type="number" id="y_koordinata" name="y_koordinata" required><br><br>
+
+        <input type="submit" value="Add customer">
+    </form>
+    <form class="form--final">
+        <h3>Add some orders</h3>
+        <label for="customer">Select Customer:</label>
+        <select id="customer" name="customer">
+
+        </select>
+        <br>
+        <label for="warehouse">Select Warehouse:</label>
+        <select id="warehouse" name="warehouse">
+
+        </select>
+        <br>
+        <label for="products">Select products:</label>
+        <select id="products" name="products">
+
+        </select>
+        <br>
+        <div class="select--number--of--products">
+            <!-- Ovdje će se dinamički dodati polja za unos količine -->
+        </div>
+        <br>
+        <input type="submit" value="OK">
+    </form>
+    <button class="display--btn">Display APP results</button>
+    <div class="results--div"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
